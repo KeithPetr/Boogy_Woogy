@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Boogy Woogy Dice Game</title>
+  </head>
+  <body>
+    <header><h1>Boogy Woogy</h1></header>
+
+    <section class="entire-game">
+      <!-- left section of the game -->
+
+      <section class="left-section">
+        <button type="button" class="start-button">Start/New Game</button>
+        <div class="calculator">Calculator</div>
+        <section class="inputs">
+          <div class="input-one">
+            <label for="num-dice">Number of dice</label>
+            <input type="text" id="num-dice" name="num-dice" />
+          </div>
+          <div class="input-two">
+            <label for="val-dice">Value of dice</label>
+            <input type="text" id="val-dice" name="val-dice" />
+          </div>
+        </section>
+
+        <button type="button" class="set-numbers">Set Numbers</button>
+      </section>
+
+      <!-- middle section of the game -->
+
+      <section class="center-section">
+        <div class="dice-container">
+          <div class="dice" id="dice1"></div>
+          <div class="dice" id="dice2"></div>
+          <div class="dice" id="dice3"></div>
+          <div class="dice" id="dice4"></div>
+          <div class="dice" id="dice5"></div>
+        </div>
+        <button type="button" id="roll-dice">Roll Dice</button>
+        <div class="current-turn-score">Current Turn Score: </div>
+        <button type="button" class="save-score">Save Score</button>
+      </section>
+
+      <!-- right section of the game -->
+
+      <section class="right-section">
+        <h2>First to 10,000 wins!</h2>
+        <div class="player1info">
+          <h3 class="player1">Player 1</h3>
+          <h3 class="player1score">Score:</h3>
+        </div>
+        <div class="player2info">
+          <h3 class="player2">Player 2</h3>
+          <h3 class="player2score">Score:</h3>
+        </div>
+      </section>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>

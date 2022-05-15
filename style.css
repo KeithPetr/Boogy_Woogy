@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background: purple;
+}
+
+header {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1em 0;
+}
+
+.entire-game {
+    display: flex;
+}
+
+/* ---Left Section--- */
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    border: solid 1px red;
+}
+
+.inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border: solid 1px black;
+}
+
+.input-one, .input-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#num-dice, #val-dice {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    margin-top: .5em;
+}
+
+.set-numbers {
+    width: 200px;
+    height: 50px;
+    font-size: 1.5rem;
+    box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+    margin-top: 1em;
+}
+
+.start-button {
+    margin-bottom: 3em;
+    width: 300px;
+    height: 100px;
+    font-size: 1.5rem;
+    box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+
+.set-numbers:hover, .start-button:hover {
+    background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+
+.set-numbers:active, .start-button:active {
+    position:relative;
+	top:2px;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+.calculator {
+    font-size: 2rem;
+    border: solid 1px black;
+    margin-bottom: 3em;
+}
+
+/* ---Center Section--- */
+
+.center-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+}
+
+.dice-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-evenly;
+    border: solid 1px orange;
+}
+
+.dice {
+    width: 200px;
+    height: 200px;
+    border: solid 1px black;
+    font-size: 2em;
+    margin-top: .5em;
+}
+
+#roll-dice, .save-score {
+    width: 200px;
+    height: 50px;
+    font-size: 1.5rem;
+    margin-top: .5em;
+    box-shadow: 1px 2px 0px 0px #edc113;
+	background:linear-gradient(to bottom, #5920c4 5%, #f039b0 100%);
+	background-color:#5920c4;
+	border-radius:18px;
+	border:1px solid #b119cf;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	padding:7px 25px;
+	text-decoration:none;
+}
+
+#roll-dice:hover, .save-score:hover {
+    background:linear-gradient(to bottom, #f039b0 5%, #5920c4 100%);
+	background-color:#f039b0;
+}
+
+#roll-dice:active, .save-score:active {
+    position:relative;
+	top:2px;
+}
+
+.current-turn-score {
+    font-size: 2rem;
+    margin-top: .5em;
+}
+
+.dice-hold {
+    border: solid 2px silver;
+}
+
+/* ---Right Section--- */
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 25%;
+    border: solid 1px green;
+    font-size: 2rem;
+}
+
+.player1info, .player2info {
+    margin-top: 1em;
+    background-color: yellow;
+}
+
+.player1score, .player2score {
+    margin-top: .25em;
+}
